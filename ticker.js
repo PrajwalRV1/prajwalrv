@@ -34,15 +34,6 @@ class AchievementsTicker {
             // Sort by priority (1 = highest priority)
             this.achievementsData.sort((a, b) => a.priority - b.priority);
             
-            // Debug: Filter to show only priority 1 items
-            this.achievementsData = this.achievementsData.filter(achievement => achievement.priority === 1);
-            
-            // Debug: Log loaded achievements
-            console.log('Loaded achievements:', this.achievementsData.length);
-            this.achievementsData.forEach((achievement, index) => {
-                console.log(`${index + 1}. ${achievement.text} (Priority: ${achievement.priority})`);
-            });
-            
         } catch (error) {
             console.error('Error loading achievements:', error);
             // Fallback achievements if JSON fails to load
