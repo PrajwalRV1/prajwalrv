@@ -7,6 +7,12 @@
       "priority": 1
     },
     {
+      "id": "ielts-score",
+      "text": "🌍 IELTS Academic Band 6.5 - English Proficiency Certified",
+      "category": "certification",
+      "priority": 1
+    },
+    {
       "id": "aria-project",
       "text": "🚀 Created ARIA - AI-Powered Interview Platform with Multi-tenant Architecture",
       "category": "project",
@@ -88,12 +94,6 @@
       "id": "multi-tenant",
       "text": "🏢 Multi-tenant Architecture & Enterprise Security Implementation",
       "category": "skills",
-      "priority": 2
-    },
-    {
-      "id": "ielts-score",
-      "text": "🌍 IELTS Academic Band 6.5 - English Proficiency Certified",
-      "category": "certification",
       "priority": 2
     }
   ]
