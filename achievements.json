@@ -1,0 +1,94 @@
+{
+  "achievements": [
+    {
+      "id": "az-204",
+      "text": "🏆 Microsoft Azure Developer Associate (AZ-204) - Scored 828/1000",
+      "category": "certification",
+      "priority": 1
+    },
+    {
+      "id": "aria-project",
+      "text": "🚀 Created ARIA - AI-Powered Interview Platform with Multi-tenant Architecture",
+      "category": "project",
+      "priority": 1
+    },
+    {
+      "id": "java-experience",
+      "text": "💼 3+ Years Experience as Java Full Stack Developer",
+      "category": "experience",
+      "priority": 1
+    },
+    {
+      "id": "crm-application",
+      "text": "🔧 Built Scalable CRM Web Application using Clean Architecture",
+      "category": "project",
+      "priority": 2
+    },
+    {
+      "id": "kalpita-role",
+      "text": "👨‍💻 Junior Software Engineer at Kalpita Technologies",
+      "category": "experience",
+      "priority": 2
+    },
+    {
+      "id": "gfg-internship",
+      "text": "🎓 Java & Spring Boot Backend Developer Intern at GeeksforGeeks",
+      "category": "experience",
+      "priority": 2
+    },
+    {
+      "id": "tech-stack",
+      "text": "⚡ Expert in ASP.NET Core, Angular 17, Azure Cloud Services",
+      "category": "skills",
+      "priority": 2
+    },
+    {
+      "id": "architecture",
+      "text": "🏗️ Specialized in Microservices Architecture & RESTful API Development",
+      "category": "skills",
+      "priority": 2
+    },
+    {
+      "id": "devops",
+      "text": "🔄 Proficient in Azure DevOps CI/CD & Docker Containerization",
+      "category": "skills",
+      "priority": 2
+    },
+    {
+      "id": "ai-integration",
+      "text": "🤖 AI/ML Integration Experience with NLP & Speech Processing",
+      "category": "skills",
+      "priority": 2
+    },
+    {
+      "id": "ui-optimization",
+      "text": "🎨 Achieved 95% Delivery Time Reduction Through UI/UX Optimization",
+      "category": "achievement",
+      "priority": 1
+    },
+    {
+      "id": "bachelor-degree",
+      "text": "🎓 Bachelor of Engineering - GM Institute of Technology (CGPA: 6.94)",
+      "category": "education",
+      "priority": 3
+    },
+    {
+      "id": "automation",
+      "text": "⚙️ Automated Figma-to-Code Conversion with Builder.io Integration",
+      "category": "achievement",
+      "priority": 2
+    },
+    {
+      "id": "tdd-practice",
+      "text": "✅ Test-Driven Development Expert with XUnit Framework",
+      "category": "skills",
+      "priority": 3
+    },
+    {
+      "id": "multi-tenant",
+      "text": "🏢 Multi-tenant Architecture & Enterprise Security Implementation",
+      "category": "skills",
+      "priority": 2
+    }
+  ]
+}
