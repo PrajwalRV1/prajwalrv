@@ -8,7 +8,7 @@ class AchievementsTicker {
         this.achievementsData = [];
         this.tickerTrack = null;
         this.isLoaded = false;
-        this.animationSpeed = 60; // seconds for full cycle
+        this.animationSpeed = 30; // seconds for full cycle
         this.init();
     }
 
@@ -52,7 +52,7 @@ class AchievementsTicker {
                 },
                 {
                     id: 'fallback-3',
-                    text: '💼 3+ Years Experience as Java Full Stack Developer',
+                    text: '💼 1.4 Years Experience as Java Full Stack Developer',
                     category: 'experience',
                     priority: 1
                 }
@@ -132,9 +132,9 @@ class AchievementsTicker {
         let speed = this.animationSpeed;
         
         if (width <= 480) {
-            speed = 35; // Faster on small screens
+            speed = 15; // Faster on small screens
         } else if (width <= 768) {
-            speed = 45; // Medium speed on tablets
+            speed = 20; // Medium speed on tablets
         }
 
         if (this.tickerTrack) {

@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://prajwalrv.github.io/">
     <meta property="og:title" content="Prajwal R V - Junior Software Engineer | ASP.NET, Angular, Azure Developer">
     <meta property="og:description" content="Junior Software Engineer specializing in C#, ASP.NET Core, Angular, and Azure Cloud Services. Microsoft Azure certified (AZ-204) with experience at Kalpita Technologies and GeeksforGeeks.">
-    <meta property="og:image" content="assets/1741492846307.jpg">
+    <meta property="og:image" content="assets/1741492770825.jpg">
     <meta property="og:site_name" content="Prajwal RV Portfolio">
     <meta property="og:locale" content="en_US">
     
@@ -28,7 +28,7 @@
     <meta property="twitter:url" content="https://prajwalrv.github.io/">
     <meta property="twitter:title" content="Prajwal R V - Junior Software Engineer | ASP.NET, Angular, Azure Developer">
     <meta property="twitter:description" content="Junior Software Engineer specializing in C#, ASP.NET Core, Angular, and Azure Cloud Services. Microsoft Azure certified (AZ-204).">
-    <meta property="twitter:image" content="assets/1741492846307.jpg">
+    <meta property="twitter:image" content="assets/1741492770825.jpg">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://prajwalrv.github.io/">
@@ -108,7 +108,7 @@
 </head>
 <body>
     <!-- Achievements Ticker -->
-    <div class="achievements-ticker-container">
+    <div class="achievements-ticker-container glass-style">
         <div class="achievements-ticker">
             <div class="achievements-ticker-track" id="ticker-track">
                 <!-- Achievements will be loaded dynamically -->
@@ -120,8 +120,7 @@
         <aside class="sidebar " data-sidebar>
             <div class="sidebar-info">
                 <figure class="avatar-box">
-                    <!-- <img src="https://i.postimg.cc/JzBWVhW4/my-avatar.png" alt="avatar" width="80"> -->
-                    <img src="assets/1741492846307.jpg" alt="Prajwal RV - Junior Software Engineer" width="80" height="80" loading="eager">
+                    <img src="assets/1741492770825.jpg" alt="Prajwal RV - Junior Software Engineer" width="80" height="80" loading="eager">
                 </figure>
 
                 <div class="info-content">
@@ -216,13 +215,11 @@
                 </header>
 
                 <section class="about-text">
-                    <p>Dynamic Junior Software Engineer with a proven track record at Kalpita Technologies, specializing in C#, ASP.NET, and Azure Cloud Services. Microsoft Azure Developer Associate certified (AZ-204) with exceptional score of 828/1000, skilled in developing scalable web applications and enhancing security through advanced authentication integration.</p>
+                    <p>Full-Stack Software Engineer with 1.4 years of professional experience specializing in Java Spring Boot and C# .NET ecosystems. Proficient in both backend technologies - Spring Boot with PostgreSQL/Redis and ASP.NET Core with Azure SQL, complemented by Angular/TypeScript for frontend development. Microsoft Azure Developer Associate certified (AZ-204) with exceptional score of 828/1000.</p>
                     
-                    <p>I've successfully built scalable CRM web applications using Clean Architecture, automated Figma design-to-code conversion processes using Builder.io, and implemented comprehensive CI/CD pipelines with Azure DevOps. My experience includes contributing to Marketing Technologies Platforms supporting billions of daily communications and achieving remarkable performance improvements like reducing delivery time by 95% through UI/UX optimization.</p>
+                    <p>Built production-ready applications including ARIA AI-powered interview platform using Spring Boot microservices architecture, and scalable CRM systems with C# .NET Clean Architecture. Experienced in containerization with Docker, CI/CD pipelines using Azure DevOps, and cloud deployment strategies. Achieved measurable improvements including 95% delivery time reduction through UI/UX optimization.</p>
                     
-                    <p>As a collaborative team player with expertise in microservices architecture, AI integration, and Test-Driven Development, I thrive in Agile environments while ensuring efficient project delivery. My technical skills span across multiple domains including full-stack development, cloud computing, containerization, and machine learning implementation.</p>
-                    
-                    <p>Currently seeking opportunities to expand my career internationally, with a particular interest in contributing to the dynamic tech landscape of the United Arab Emirates. Eager to bring my expertise in modern software development, cloud technologies, and innovative problem-solving approaches to forward-thinking organizations in the UAE's rapidly growing technology sector.</p>
+                    <p>Skilled in modern development practices including Test-Driven Development, RESTful API design, microservices architecture, and AI/ML integration. Actively seeking opportunities in the UAE tech sector to leverage expertise in Java, C#, cloud technologies, and full-stack development to contribute to the region's digital transformation and innovative software solutions.</p>
                 </section>
 
                 <section class="service">
@@ -1102,6 +1099,42 @@
                     });
                 });
             }
+
+            // --- Ticker Style Switcher (Optional) ---
+            // Uncomment and use this function to switch ticker styles
+            window.switchTickerStyle = function(styleName) {
+                const tickerContainer = document.querySelector('.achievements-ticker-container');
+                if (!tickerContainer) return;
+                
+                // Remove all existing style classes
+                tickerContainer.classList.remove('neon-style', 'glass-style', 'gradient-border', 'matrix-style', 'minimal-style');
+                
+                // Add the new style class
+                if (styleName && styleName !== 'default') {
+                    tickerContainer.classList.add(styleName);
+                }
+                
+                console.log(`Ticker style switched to: ${styleName || 'default'}`);
+            };
+
+            // --- Ticker Item Animation Switcher (Optional) ---
+            window.addTickerAnimation = function(animationType) {
+                const tickerItems = document.querySelectorAll('.ticker-item');
+                
+                // Remove existing animation classes
+                tickerItems.forEach(item => {
+                    item.classList.remove('floating', 'pulsing', 'glowing');
+                });
+                
+                // Add new animation class
+                if (animationType) {
+                    tickerItems.forEach(item => {
+                        item.classList.add(animationType);
+                    });
+                }
+                
+                console.log(`Ticker animation set to: ${animationType || 'none'}`);
+            };
         });
     </script>
 
