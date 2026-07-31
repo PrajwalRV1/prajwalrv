@@ -40,19 +40,25 @@ class AchievementsTicker {
             this.achievementsData = [
                 {
                     id: 'fallback-1',
-                    text: '🏆 Microsoft Azure Developer Associate (AZ-204) - Scored 828/1000',
+                    text: '🛡️ CompTIA Security+ Certified - Application Security Engineer',
                     category: 'certification',
                     priority: 1
                 },
                 {
                     id: 'fallback-2',
-                    text: '🚀 Created ARIA - AI-Powered Interview Platform',
-                    category: 'project',
+                    text: '🏆 Microsoft Azure Developer Associate (AZ-204) - Scored 828/1000',
+                    category: 'certification',
                     priority: 1
                 },
                 {
                     id: 'fallback-3',
-                    text: '💼 1.4 Years Experience as Java Full Stack Developer',
+                    text: '🔒 DevSecOps CI/CD Security Gates & Automated Scanners',
+                    category: 'skills',
+                    priority: 1
+                },
+                {
+                    id: 'fallback-4',
+                    text: '💼 1.5+ Years Software Engineering Foundation + AppSec Specialist',
                     category: 'experience',
                     priority: 1
                 }

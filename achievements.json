@@ -1,6 +1,12 @@
 {
-  "_updated": "2025-01-04T10:06:45Z",
+  "_updated": "2026-07-31T13:55:00Z",
   "achievements": [
+    {
+      "id": "comptia-secplus",
+      "text": "🛡️ CompTIA Security+ Certified - Application Security Engineer",
+      "category": "certification",
+      "priority": 1
+    },
     {
       "id": "az-204",
       "text": "🏆 Microsoft Azure Developer Associate (AZ-204) - Scored 828/1000",
@@ -8,94 +14,58 @@
       "priority": 1
     },
     {
-      "id": "ielts-score",
-      "text": "🌍 IELTS Academic Band 6.5 - English Proficiency Certified",
-      "category": "certification",
+      "id": "remote-location",
+      "text": "🌍 Open for Global Remote & Hybrid Application Security Roles",
+      "category": "experience",
       "priority": 1
+    },
+    {
+      "id": "devsecops-pipeline",
+      "text": "🔒 DevSecOps CI/CD Security Gates (SonarQube, ZAP, Trivy, Gitleaks)",
+      "category": "skills",
+      "priority": 1
+    },
+    {
+      "id": "appsec-experience",
+      "text": "💼 1.5+ Years Software Engineering Foundation + AppSec Specialist",
+      "category": "experience",
+      "priority": 1
+    },
+    {
+      "id": "threat-modeling",
+      "text": "🎯 Threat Modeling (STRIDE, PASTA) & OWASP Web, API & AI LLM Top 10",
+      "category": "skills",
+      "priority": 2
+    },
+    {
+      "id": "secure-code-review",
+      "text": "⚡ Secure Code Review & Remediation in C# .NET, Python, TypeScript",
+      "category": "skills",
+      "priority": 2
+    },
+    {
+      "id": "container-iac",
+      "text": "🐳 Container & IaC Security (Docker, Kubernetes EKS, Terraform, Vault)",
+      "category": "skills",
+      "priority": 2
+    },
+    {
+      "id": "auth-crypto",
+      "text": "🗝️ Enterprise Auth & Secrets (OAuth2, OIDC, Auth0, Azure Key Vault)",
+      "category": "skills",
+      "priority": 2
     },
     {
       "id": "aria-project",
-      "text": "🚀 Created ARIA - AI-Powered Interview Platform with Multi-tenant Architecture",
-      "category": "project",
-      "priority": 1
-    },
-    {
-      "id": "java-experience",
-      "text": "💼 1.4 Years Experience as Full Stack Developer",
-      "category": "experience",
-      "priority": 1
-    },
-    {
-      "id": "crm-application",
-      "text": "🔧 Built Scalable CRM Web Application using Clean Architecture",
+      "text": "🚀 ARIA AI Platform - Microservices Architecture & Secure Enterprise Auth",
       "category": "project",
       "priority": 2
     },
     {
-      "id": "kalpita-role",
-      "text": "👨‍💻 Junior Software Engineer at Kalpita Technologies",
-      "category": "experience",
-      "priority": 2
-    },
-    {
-      "id": "gfg-internship",
-      "text": "🎓 Java & Spring Boot Backend Developer Intern at GeeksforGeeks",
-      "category": "experience",
-      "priority": 2
-    },
-    {
-      "id": "tech-stack",
-      "text": "⚡ Expert in ASP.NET Core, Angular 17, Azure Cloud Services",
-      "category": "skills",
-      "priority": 2
-    },
-    {
-      "id": "architecture",
-      "text": "🏗️ Specialized in Microservices Architecture & RESTful API Development",
-      "category": "skills",
-      "priority": 2
-    },
-    {
-      "id": "devops",
-      "text": "🔄 Proficient in Azure DevOps CI/CD & Docker Containerization",
-      "category": "skills",
-      "priority": 2
-    },
-    {
-      "id": "ai-integration",
-      "text": "🤖 AI/ML Integration Experience with NLP & Speech Processing",
-      "category": "skills",
-      "priority": 2
-    },
-    {
-      "id": "ui-optimization",
-      "text": "🎨 Achieved 95% Delivery Time Reduction Through UI/UX Optimization",
-      "category": "achievement",
-      "priority": 1
-    },
-    {
-      "id": "bachelor-degree",
-      "text": "🎓 Bachelor of Engineering - GM Institute of Technology (CGPA: 6.94)",
-      "category": "education",
-      "priority": 3
-    },
-    {
-      "id": "automation",
-      "text": "⚙️ Automated Figma-to-Code Conversion with Builder.io Integration",
-      "category": "achievement",
-      "priority": 2
-    },
-    {
-      "id": "tdd-practice",
-      "text": "✅ Test-Driven Development Expert with XUnit Framework",
+      "id": "compliance",
+      "text": "📋 Compliance & Governance Frameworks (ISO 27001, SOC 2, NIST, PCI-DSS)",
       "category": "skills",
       "priority": 3
-    },
-    {
-      "id": "multi-tenant",
-      "text": "🏢 Multi-tenant Architecture & Enterprise Security Implementation",
-      "category": "skills",
-      "priority": 2
     }
   ]
 }
