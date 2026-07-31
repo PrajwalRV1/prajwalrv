@@ -1,0 +1,222 @@
+<svg width="1180" height="610" viewBox="0 0 1180 610" xmlns="http://www.w3.org/2000/svg"><defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#A78BFA;#22D3EE" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#22D3EE;#A78BFA" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="shimmerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="blobA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowPulse" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur">
+        <animate attributeName="stdDeviation" values="2;5;2" dur="2.4s" repeatCount="indefinite"/>
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="roundedCanvas">
+      <rect x="0" y="0" width="1180" height="610" rx="26"/>
+    </clipPath>
+    </defs><g clip-path="url(#roundedCanvas)"><rect x="0" y="0" width="1180" height="610" fill="url(#bgGrad)"/>
+    <circle cx="180" cy="120" r="220" fill="url(#blobA)">
+      <animate attributeName="cx" values="180;230;180" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;160;120" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="480" r="260" fill="url(#blobB)">
+      <animate attributeName="cx" values="950;900;950" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="480;440;480" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="80" r="180" fill="url(#blobC)">
+      <animate attributeName="cx" values="700;760;700" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="80;120;80" dur="13s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="683" cy="174" r="1.4" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.2s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="174;147;174" dur="5.2s" begin="0.4s" repeatCount="indefinite"/>
+    </circle><circle cx="138" cy="539" r="1.1" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.3s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="539;516;539" dur="5.3s" begin="0.3s" repeatCount="indefinite"/>
+    </circle><circle cx="205" cy="584" r="1.4" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="6.3s" begin="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="584;571;584" dur="8.3s" begin="3.8s" repeatCount="indefinite"/>
+    </circle><circle cx="146" cy="426" r="0.9" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.9s" begin="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="426;399;426" dur="5.9s" begin="3.4s" repeatCount="indefinite"/>
+    </circle><circle cx="613" cy="449" r="1.0" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.5s" begin="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="449;430;449" dur="5.5s" begin="2.2s" repeatCount="indefinite"/>
+    </circle><circle cx="390" cy="125" r="1.6" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5.6s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="125;104;125" dur="7.6s" begin="0.4s" repeatCount="indefinite"/>
+    </circle><circle cx="148" cy="81" r="1.7" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5.0s" begin="1.7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="81;54;81" dur="7.0s" begin="1.7s" repeatCount="indefinite"/>
+    </circle><circle cx="663" cy="496" r="1.6" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.8s" begin="1.0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="496;477;496" dur="6.8s" begin="1.0s" repeatCount="indefinite"/>
+    </circle><circle cx="388" cy="269" r="0.9" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.2s" begin="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="269;244;269" dur="6.2s" begin="3.5s" repeatCount="indefinite"/>
+    </circle><circle cx="939" cy="314" r="1.7" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.3s" begin="1.7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="314;288;314" dur="5.3s" begin="1.7s" repeatCount="indefinite"/>
+    </circle><circle cx="720" cy="175" r="2.1" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.7s" begin="3.1s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="175;163;175" dur="6.7s" begin="3.1s" repeatCount="indefinite"/>
+    </circle><circle cx="662" cy="368" r="1.8" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5.4s" begin="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="368;340;368" dur="7.4s" begin="3.2s" repeatCount="indefinite"/>
+    </circle><circle cx="160" cy="115" r="2.1" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.9s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="115;103;115" dur="6.9s" begin="0.2s" repeatCount="indefinite"/>
+    </circle><circle cx="654" cy="476" r="1.2" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.5s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="476;455;476" dur="6.5s" begin="0.1s" repeatCount="indefinite"/>
+    </circle><circle cx="965" cy="383" r="1.0" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.5s" begin="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="383;372;383" dur="5.5s" begin="0.9s" repeatCount="indefinite"/>
+    </circle><circle cx="608" cy="152" r="1.8" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.6s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="152;127;152" dur="6.6s" begin="0.3s" repeatCount="indefinite"/>
+    </circle><circle cx="939" cy="431" r="1.6" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="6.5s" begin="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="431;408;431" dur="8.5s" begin="3.5s" repeatCount="indefinite"/>
+    </circle><circle cx="590" cy="445" r="2.2" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5.7s" begin="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="445;423;445" dur="7.7s" begin="3.8s" repeatCount="indefinite"/>
+    </circle><circle cx="329" cy="104" r="1.0" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.9s" begin="0.0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="104;87;104" dur="5.9s" begin="0.0s" repeatCount="indefinite"/>
+    </circle><circle cx="393" cy="289" r="1.2" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3.6s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="289;262;289" dur="5.6s" begin="1.5s" repeatCount="indefinite"/>
+    </circle><circle cx="672" cy="148" r="1.8" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5.1s" begin="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="148;119;148" dur="7.1s" begin="2.6s" repeatCount="indefinite"/>
+    </circle><circle cx="130" cy="487" r="2.1" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="6.1s" begin="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="487;460;487" dur="8.1s" begin="1.6s" repeatCount="indefinite"/>
+    </circle><circle cx="837" cy="423" r="0.9" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5.5s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="423;412;423" dur="7.5s" begin="0.8s" repeatCount="indefinite"/>
+    </circle><circle cx="447" cy="471" r="1.0" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.4s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="471;460;471" dur="6.4s" begin="0.4s" repeatCount="indefinite"/>
+    </circle><circle cx="329" cy="569" r="0.9" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="569;559;569" dur="6.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle><circle cx="445" cy="405" r="1.0" fill="#22D3EE" opacity="0.35">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.0s" begin="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="405;384;405" dur="6.0s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="0" y="0" width="1180" height="3" fill="url(#shimmerGrad)" opacity="0.5">
+      <animate attributeName="y" values="0;610;0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="1.5" y="1.5" width="1177" height="607" rx="24" fill="none" stroke="url(#shimmerGrad)" stroke-width="1.4">
+      <animateTransform attributeName="transform" type="rotate" from="0 590.0 305.0" to="360 590.0 305.0" dur="14s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1.5" y="1.5" width="1177" height="607" rx="24" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+    <rect x="34" y="34" width="412" height="542" rx="18" fill="#0B1220" opacity="0.55" stroke="rgba(255,255,255,0.06)" stroke-width="1"/><g font-family="Consolas, 'Courier New', monospace" font-size="13.5" filter="url(#glowSoft)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="5s" repeatCount="indefinite" additive="sum"/><text x="60" y="80" fill="url(#asciiGrad)" opacity="0">root@prajwal:~$ whoami<animate attributeName="opacity" values="0;1" begin="0.0s" dur="0.4s" fill="freeze"/></text><text x="60" y="105" fill="url(#asciiGrad)" opacity="0"><animate attributeName="opacity" values="0;1" begin="0.18s" dur="0.4s" fill="freeze"/></text><text x="60" y="130" fill="url(#asciiGrad)" opacity="0">        .-------------.<animate attributeName="opacity" values="0;1" begin="0.36s" dur="0.4s" fill="freeze"/></text><text x="60" y="155" fill="url(#asciiGrad)" opacity="0">       /   S E C U R  \<animate attributeName="opacity" values="0;1" begin="0.54s" dur="0.4s" fill="freeze"/></text><text x="60" y="180" fill="url(#asciiGrad)" opacity="0">      |-----------------|<animate attributeName="opacity" values="0;1" begin="0.72s" dur="0.4s" fill="freeze"/></text><text x="60" y="205" fill="url(#asciiGrad)" opacity="0">      |    .-------.    |<animate attributeName="opacity" values="0;1" begin="0.9s" dur="0.4s" fill="freeze"/></text><text x="60" y="230" fill="url(#asciiGrad)" opacity="0">      |   /  ┌───┐  \   |<animate attributeName="opacity" values="0;1" begin="1.08s" dur="0.4s" fill="freeze"/></text><text x="60" y="255" fill="url(#asciiGrad)" opacity="0">      |  |   │ O │   |  |<animate attributeName="opacity" values="0;1" begin="1.26s" dur="0.4s" fill="freeze"/></text><text x="60" y="280" fill="url(#asciiGrad)" opacity="0">      |   \  └───┘  /   |<animate attributeName="opacity" values="0;1" begin="1.44s" dur="0.4s" fill="freeze"/></text><text x="60" y="305" fill="url(#asciiGrad)" opacity="0">      |    '-------'    |<animate attributeName="opacity" values="0;1" begin="1.62s" dur="0.4s" fill="freeze"/></text><text x="60" y="330" fill="url(#asciiGrad)" opacity="0">      |    |||||||||    |<animate attributeName="opacity" values="0;1" begin="1.8s" dur="0.4s" fill="freeze"/></text><text x="60" y="355" fill="url(#asciiGrad)" opacity="0">      '-----------------'<animate attributeName="opacity" values="0;1" begin="1.98s" dur="0.4s" fill="freeze"/></text><text x="60" y="380" fill="url(#asciiGrad)" opacity="0"><animate attributeName="opacity" values="0;1" begin="2.16s" dur="0.4s" fill="freeze"/></text><text x="60" y="405" fill="#94A3B8" opacity="0">  &gt; scanning targets ...<animate attributeName="opacity" values="0;1" begin="2.34s" dur="0.4s" fill="freeze"/></text><text x="60" y="430" fill="#94A3B8" opacity="0">  &gt; exploits verified: 257/257<animate attributeName="opacity" values="0;1" begin="2.52s" dur="0.4s" fill="freeze"/></text><text x="60" y="455" fill="#94A3B8" opacity="0">  &gt; threat model: STRIDE / PASTA<animate attributeName="opacity" values="0;1" begin="2.7s" dur="0.4s" fill="freeze"/></text><text x="60" y="480" fill="#94A3B8" opacity="0">  &gt; status: SECURE<animate attributeName="opacity" values="0;1" begin="2.88s" dur="0.4s" fill="freeze"/></text><rect x="205.79999999999998" y="468" width="8" height="15" fill="#22D3EE" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" dur="1.1s" begin="3.06s" repeatCount="indefinite"/></rect></g><rect x="470" y="34" width="676" height="542" rx="18" fill="#0B1220" opacity="0.6" stroke="rgba(255,255,255,0.06)" stroke-width="1"/><rect x="470" y="34" width="676" height="38" rx="18" fill="#0F172A" opacity="0.9"/><rect x="470" y="52" width="676" height="20" fill="#0F172A" opacity="0.9"/><circle cx="496" cy="53" r="6" fill="#FF5F56"/><circle cx="516" cy="53" r="6" fill="#FFBD2E"/><circle cx="536" cy="53" r="6" fill="#27C93F"/><text x="808.0" y="58" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#94A3B8">prajwal@appsec — zsh</text><text x="504" y="112" font-family="Consolas, monospace" font-size="20" fill="#F8FAFC" opacity="0">Hi 👋<animate attributeName="opacity" values="0;1" begin="0.1s" dur="0.5s" fill="freeze"/></text><text x="504" y="152" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="url(#accentGrad)" opacity="0">I'm Prajwal RV<animate attributeName="opacity" values="0;1" begin="0.4s" dur="0.6s" fill="freeze"/></text><g font-family="Consolas, monospace" font-size="19" fill="#94A3B8"><clipPath id="typeclipdark0"><rect x="504" y="180" height="26" width="0"><animate attributeName="width" values="0;307.4;307.4;0;0" keyTimes="0;0.09375;0.1875;0.2375;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath><text x="504" y="198" clip-path="url(#typeclipdark0)">Application Security Engineer</text><clipPath id="typeclipdark1"><rect x="504" y="180" height="26" width="0"><animate attributeName="width" values="0;0;349.8;349.8;0;0" keyTimes="0;0.25;0.34375;0.4375;0.4875;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath><text x="504" y="198" clip-path="url(#typeclipdark1)">VAPT &amp; Threat Modeling Specialist</text><clipPath id="typeclipdark2"><rect x="504" y="180" height="26" width="0"><animate attributeName="width" values="0;0;265.0;265.0;0;0" keyTimes="0;0.5;0.59375;0.6875;0.7375;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath><text x="504" y="198" clip-path="url(#typeclipdark2)">Full-Stack .NET Developer</text><clipPath id="typeclipdark3"><rect x="504" y="180" height="26" width="0"><animate attributeName="width" values="0;0;307.4;307.4;0;0" keyTimes="0;0.75;0.84375;0.9375;0.9875;1" dur="16.0s" repeatCount="indefinite"/></rect></clipPath><text x="504" y="198" clip-path="url(#typeclipdark3)">Breaks Code. Then Secures It.</text></g><rect x="504" y="182" width="9" height="20" fill="#22D3EE"><animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/><animate attributeName="x" values="504;834" dur="0.01s" begin="0s" fill="freeze"/></rect><g font-family="Consolas, monospace" font-size="14.5" fill="#94A3B8"><text x="504" y="242" opacity="0">📍  Location     :  India<animate attributeName="opacity" values="0;1" begin="6.5s" dur="0.5s" fill="freeze"/></text><text x="504" y="269" opacity="0">🎓  Background   :  Full-Stack Dev  →  AppSec Engineer<animate attributeName="opacity" values="0;1" begin="6.85s" dur="0.5s" fill="freeze"/></text><text x="504" y="296" opacity="0">🎯  Focus        :  VAPT · Threat Modeling · Secure SDLC<animate attributeName="opacity" values="0;1" begin="7.2s" dur="0.5s" fill="freeze"/></text><text x="504" y="323" opacity="0">🧪  Signature    :  257 / 257 PortSwigger Academy exploits automated<animate attributeName="opacity" values="0;1" begin="7.55s" dur="0.5s" fill="freeze"/></text><text x="504" y="350" opacity="0">✉️   Contact      :  github.com/prajwalrv<animate attributeName="opacity" values="0;1" begin="7.9s" dur="0.5s" fill="freeze"/></text></g><text x="504" y="391" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#F8FAFC" opacity="0">Skills &amp; Tools<animate attributeName="opacity" values="0;1" begin="8.3s" dur="0.5s" fill="freeze"/></text><g font-family="Consolas, monospace" font-size="12.5"><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="8.6s" dur="0.4s" fill="freeze"/>
+      <rect x="504" y="409" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="520" cy="424.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="534" y="428.5" fill="#F8FAFC">C#</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="8.68s" dur="0.4s" fill="freeze"/>
+      <rect x="686" y="409" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="702" cy="424.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="716" y="428.5" fill="#F8FAFC">ASP.NET Core</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="8.76s" dur="0.4s" fill="freeze"/>
+      <rect x="868" y="409" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="884" cy="424.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="898" y="428.5" fill="#F8FAFC">Angular</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="8.84s" dur="0.4s" fill="freeze"/>
+      <rect x="504" y="449" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="520" cy="464.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="534" y="468.5" fill="#F8FAFC">Azure</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="8.92s" dur="0.4s" fill="freeze"/>
+      <rect x="686" y="449" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="702" cy="464.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="716" y="468.5" fill="#F8FAFC">Python</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="9.0s" dur="0.4s" fill="freeze"/>
+      <rect x="868" y="449" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="884" cy="464.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="898" y="468.5" fill="#F8FAFC">Burp Suite</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="9.08s" dur="0.4s" fill="freeze"/>
+      <rect x="504" y="489" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="520" cy="504.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="534" y="508.5" fill="#F8FAFC">OWASP ZAP</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="9.16s" dur="0.4s" fill="freeze"/>
+      <rect x="686" y="489" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="702" cy="504.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="716" y="508.5" fill="#F8FAFC">Docker</text>
+    </g><g opacity="0" filter="url(#glowPulse)">
+      <animate attributeName="opacity" values="0;1" begin="9.24s" dur="0.4s" fill="freeze"/>
+      <rect x="868" y="489" width="172" height="30" rx="15" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <circle cx="884" cy="504.0" r="3.4" fill="url(#accentGrad)"/>
+      <text x="898" y="508.5" fill="#F8FAFC">Threat Modeling</text>
+    </g></g><g filter="url(#glowSoft)">
+      <circle cx="526" cy="542" r="18" fill="rgba(255,255,255,0.04)" stroke="url(#accentGrad)" stroke-width="1.4">
+        <animate attributeName="r" values="18;19.5;18" dur="3s" begin="0.0s" repeatCount="indefinite"/>
+      </circle>
+      <text x="526" y="547" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#F8FAFC">GH</text>
+    </g><g filter="url(#glowSoft)">
+      <circle cx="582" cy="542" r="18" fill="rgba(255,255,255,0.04)" stroke="url(#accentGrad)" stroke-width="1.4">
+        <animate attributeName="r" values="18;19.5;18" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="582" y="547" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#F8FAFC">in</text>
+    </g><g filter="url(#glowSoft)">
+      <circle cx="638" cy="542" r="18" fill="rgba(255,255,255,0.04)" stroke="url(#accentGrad)" stroke-width="1.4">
+        <animate attributeName="r" values="18;19.5;18" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="638" y="547" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#F8FAFC">✉</text>
+    </g></g></svg>
