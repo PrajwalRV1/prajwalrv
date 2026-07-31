@@ -1350,6 +1350,12 @@ article.active {
     border-radius: inherit;
 }
 
+/*Experience*/
+.timeline-text strong {
+    color: var(--white2);
+    font-weight: var(--fw400);
+}
+
 /*PORTFOLIO*/
 
 .filter-list {
@@ -2158,17 +2164,24 @@ textarea.form-input::-webkit-realizer {
         right: 0;
         width: max-content;
         border-radius: 0 20px;
-        padding: 0 20px;
+        padding: 0 15px;
         box-shadow: none;
+        z-index: 10;
     }
 
     .navbar-list {
-        gap: 30px;
-        padding: 0 20px;
+        gap: 16px;
+        padding: 0 15px;
     }
 
     .navbar-link {
         font-weight: var(--fw500);
+        font-size: 13.5px;
+    }
+
+    article header {
+        max-width: calc(100% - 440px);
+        margin-bottom: 25px;
     }
 
     .service-list {
@@ -2741,4 +2754,304 @@ textarea.form-input::-webkit-realizer {
 .project-stack-tag:hover {
     color: var(--orange-yellow-crayola, #e9c46a);
     border-color: var(--orange-yellow-crayola, #e9c46a);
+}
+
+/* ============================================================
+   PROJECTS V2 — Premium Card Redesign
+   ============================================================ */
+
+.projects-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ── Filter Bar ── */
+.pv2-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.pv2-filter-btn {
+    padding: 7px 18px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    background: hsla(240, 5%, 18%, 0.9);
+    color: var(--light-gray, #a8a8b3);
+    border: 1px solid hsla(0, 0%, 100%, 0.08);
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.pv2-filter-btn:hover {
+    color: var(--orange-yellow-crayola, #e9c46a);
+    border-color: hsla(43, 74%, 49%, 0.4);
+}
+
+.pv2-filter-btn.active {
+    background: hsla(43, 74%, 49%, 0.15);
+    color: var(--orange-yellow-crayola, #e9c46a);
+    border-color: hsla(43, 74%, 49%, 0.5);
+    box-shadow: 0 0 12px hsla(43, 74%, 49%, 0.15);
+}
+
+/* ── Grid ── */
+.pv2-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ── Card ── */
+.pv2-card {
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    background: hsl(240, 2%, 13%);
+    border: 1px solid hsla(0, 0%, 100%, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+}
+
+.pv2-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 56px hsla(0, 0%, 0%, 0.5);
+    border-color: hsla(0, 0%, 100%, 0.14);
+}
+
+/* Left colored accent bar */
+.pv2-card-bar {
+    width: 5px;
+    flex-shrink: 0;
+    background: var(--bar-color, #e9c46a);
+    position: relative;
+}
+
+.pv2-card-bar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bar-color, #e9c46a);
+    filter: blur(6px);
+    opacity: 0.4;
+}
+
+/* Card inner */
+.pv2-card-inner {
+    flex: 1;
+    padding: 24px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Top row: icon + meta */
+.pv2-card-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Icon wrap */
+.pv2-icon-wrap {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    background: hsla(240, 5%, 16%, 0.9);
+    transition: box-shadow 0.25s;
+}
+
+.pv2-card:hover .pv2-icon-wrap {
+    box-shadow: 0 0 20px hsla(0, 0%, 100%, 0.06);
+}
+
+.pv2-icon--gold {
+    border-color: hsla(43, 74%, 49%, 0.3);
+    background: hsla(43, 74%, 49%, 0.08);
+}
+
+.pv2-icon--orange {
+    border-color: hsla(16, 75%, 62%, 0.3);
+    background: hsla(16, 75%, 62%, 0.08);
+}
+
+.pv2-icon--teal {
+    border-color: hsla(173, 58%, 39%, 0.3);
+    background: hsla(173, 58%, 39%, 0.08);
+}
+
+.pv2-icon-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Meta: badge + links */
+.pv2-meta {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pv2-badge {
+    display: inline-block;
+    padding: 4px 13px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: hsla(0, 0%, 100%, 0.06);
+    color: var(--bc, #e9c46a);
+    border: 1px solid color-mix(in srgb, var(--bc, #e9c46a) 35%, transparent);
+}
+
+.pv2-links {
+    display: flex;
+    gap: 8px;
+}
+
+/* Action buttons */
+.pv2-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 9px;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+    white-space: nowrap;
+}
+
+.pv2-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.pv2-btn ion-icon {
+    font-size: 14px;
+}
+
+.pv2-btn--github {
+    background: var(--orange-yellow-crayola, #e9c46a);
+    color: hsl(240, 10%, 10%);
+    box-shadow: 0 4px 14px hsla(43, 74%, 49%, 0.25);
+}
+
+.pv2-btn--github:hover {
+    box-shadow: 0 6px 20px hsla(43, 74%, 49%, 0.4);
+}
+
+.pv2-btn--teal {
+    background: #2a9d8f;
+    color: #fff;
+    box-shadow: 0 4px 14px hsla(173, 58%, 39%, 0.3);
+}
+
+/* Title & description */
+.pv2-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white-2, #e8e8e8);
+    line-height: 1.35;
+}
+
+.pv2-desc {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: var(--light-gray, #a8a8b3);
+}
+
+/* Highlights box */
+.pv2-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 16px;
+    background: hsla(0, 0%, 100%, 0.03);
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 100%, 0.06);
+}
+
+.pv2-hl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--light-gray, #c8c8c8);
+    line-height: 1.5;
+}
+
+.pv2-hl ion-icon {
+    font-size: 15px;
+    flex-shrink: 0;
+    color: var(--orange-yellow-crayola, #e9c46a);
+}
+
+/* Tech stack tags */
+.pv2-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.pv2-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 11.5px;
+    font-weight: 500;
+    color: var(--light-gray, #c8c8c8);
+    background: hsla(240, 5%, 18%, 0.9);
+    border: 1px solid hsla(0, 0%, 100%, 0.09);
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.pv2-tag:hover {
+    color: var(--orange-yellow-crayola, #e9c46a);
+    border-color: hsla(43, 74%, 49%, 0.4);
+    background: hsla(43, 74%, 49%, 0.07);
+}
+
+/* Hidden cards via filter */
+.pv2-card.hidden {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 580px) {
+    .pv2-card-inner {
+        padding: 18px 16px;
+    }
+
+    .pv2-card-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pv2-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pv2-title {
+        font-size: 15px;
+    }
 }

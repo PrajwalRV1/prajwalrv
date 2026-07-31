@@ -217,7 +217,8 @@
             <nav class="navbar">
                 <ul class="navbar-list">
                     <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Experience</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Skills</button></li>
                     <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
                     <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
                     <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
@@ -328,13 +329,13 @@
                                         data-testimonials-avatar width="60">
                                 </figure>
 
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>DevSecOps & SAST / DAST /
-                                    SCA</h4>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>DevSecOps & Pipeline
+                                    Security</h4>
 
                                 <div class="testimonials-text" data-testimonials-text>
-                                    <p>Proficient in implementing SAST (SonarQube), SCA (pip-audit, Dependabot), DAST
-                                        (OWASP ZAP), and Secret Scanning (Gitleaks) within Azure DevOps & GitHub Actions
-                                        CI/CD security gates.</p>
+                                    <p>Automating SAST (SonarQube), SCA (pip-audit, Dependabot), Secret Scanning
+                                        (Gitleaks), and DAST (OWASP ZAP) with HashiCorp Vault & OIDC dynamic credentials
+                                        in GitHub Actions and Azure DevOps CI/CD gates.</p>
                                 </div>
                             </div>
                         </li>
@@ -342,17 +343,17 @@
                         <li class="testimonials-item">
                             <div class="content-card" data-testimonials-item>
                                 <figure class="testimonials-avatar-box">
-                                    <img src="assets/Owasp.svg" alt="OWASP Threat Modeling" data-testimonials-avatar
+                                    <img src="assets/Owasp.svg" alt="STRIDE Threat Modeling" data-testimonials-avatar
                                         width="60">
                                 </figure>
 
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Threat Modeling &
-                                    Frameworks</h4>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>STRIDE Threat Modeling &
+                                    Risk Analysis</h4>
 
                                 <div class="testimonials-text" data-testimonials-text>
-                                    <p>Expertise in Threat Modeling (STRIDE, PASTA, OWASP Threat Dragon) and analyzing
-                                        risks across OWASP Web Top 10, OWASP API Security Top 10, and OWASP AI / LLM Top
-                                        10.</p>
+                                    <p>Conducting STRIDE & PASTA threat modeling on microservices and cloud
+                                        architectures to identify trust boundaries, data flow vulnerabilities, and
+                                        attack vectors before code is written.</p>
                                 </div>
                             </div>
                         </li>
@@ -365,12 +366,30 @@
                                 </figure>
 
                                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Secure Code Review &
-                                    Remediation</h4>
+                                    Remediation (.NET, Java, Python)</h4>
 
                                 <div class="testimonials-text" data-testimonials-text>
-                                    <p>Skilled in auditing C# .NET Core, Python, Java Spring, and TypeScript codebases
-                                        to remediate SQLi, XSS, CSRF, SSRF, IDOR, RCE, and broken authentication
-                                        vulnerabilities.</p>
+                                    <p>Auditing C# .NET Core, Java Spring Boot, Python, and TypeScript codebases to
+                                        remediate SQLi, XSS, SSRF, IDOR, RCE, and broken authentication with
+                                        developer-first fixes.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://img.icons8.com/color/60/lock.png" alt="Source Code Security"
+                                        data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Source Code & SCM
+                                    Security</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>Enforcing Gitleaks pre-commit hooks, GitHub Actions secret scanning, branch
+                                        protection rules, RBAC access controls, CODEOWNERS, and Dependabot automated
+                                        patching.</p>
                                 </div>
                             </div>
                         </li>
@@ -383,13 +402,13 @@
                                     <img src="assets/microsoft.png" alt="Azure" data-testimonials-avatar width="26">
                                 </figure>
 
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Cloud & IaC Security (AWS
-                                    / Azure)</h4>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Cloud & IaC Security
+                                    (Azure & AWS)</h4>
 
                                 <div class="testimonials-text" data-testimonials-text>
-                                    <p>Experienced in Azure Security Center / Defender, AWS Dynamic Credentials, IAM
-                                        Policy enforcement, HashiCorp Vault, and scanning Terraform Infrastructure as
-                                        Code.</p>
+                                    <p>Hardening Azure Key Vault, Azure App Services, AWS OIDC dynamic credentials, IAM
+                                        policy enforcement, HashiCorp Vault, and static security analysis of Terraform
+                                        IaC using Checkov.</p>
                                 </div>
                             </div>
                         </li>
@@ -402,12 +421,12 @@
                                 </figure>
 
                                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Container & Kubernetes
-                                    Security</h4>
+                                    Hardening</h4>
 
                                 <div class="testimonials-text" data-testimonials-text>
-                                    <p>Hardening Docker containers with rootless builds, distroless images, Trivy
-                                        vulnerability scanning, EKS security, admission controllers, and Kubernetes
-                                        Network Policies.</p>
+                                    <p>Hardening Docker workloads using rootless builds, distroless multi-stage images,
+                                        Trivy vulnerability scanning, and securing AWS EKS with Kubernetes Network
+                                        Policies and RBAC.</p>
                                 </div>
                             </div>
                         </li>
@@ -419,30 +438,12 @@
                                         data-testimonials-avatar width="60">
                                 </figure>
 
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pentesting & Security
-                                    Automation</h4>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Web & API Penetration
+                                    Testing</h4>
 
                                 <div class="testimonials-text" data-testimonials-text>
-                                    <p>Manual and automated web/API penetration testing with Burp Suite Pro, Postman,
-                                        and writing custom Python, PowerShell, and Bash security automation tools.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
-                                <figure class="testimonials-avatar-box">
-                                    <img src="https://img.icons8.com/color/60/lock.png" alt="Auth Crypto"
-                                        data-testimonials-avatar width="60">
-                                </figure>
-
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Auth, Identity &
-                                    Cryptography</h4>
-
-                                <div class="testimonials-text" data-testimonials-text>
-                                    <p>Implementing OAuth 2.0, OpenID Connect (OIDC), JWT, Auth0, SAML, TLS/SSL, AES/RSA
-                                        encryption, and secure secrets management via Azure Key Vault & HashiCorp Vault.
-                                    </p>
+                                    <p>Hands-on exploitation and remediation of OWASP Web Top 10 & API Top 10 using Burp
+                                        Suite Pro, OWASP ZAP, Postman, and custom Python automation scripts.</p>
                                 </div>
                             </div>
                         </li>
@@ -454,13 +455,13 @@
                                         data-testimonials-avatar width="60">
                                 </figure>
 
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Compliance & Risk
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Compliance, Identity &
                                     Governance</h4>
 
                                 <div class="testimonials-text" data-testimonials-text>
-                                    <p>Knowledge of ISO 27001, SOC 2, NIST SP 800-53, PCI-DSS, CIS Benchmarks, CVSS
-                                        scoring, defect triage in Jira/Azure Boards, and running Security Champion
-                                        programs.</p>
+                                    <p>Implementing OAuth 2.0 / OIDC (Auth0, Managed Identities), and enforcing
+                                        continuous compliance controls aligned with CIS Benchmarks, NIST SP 800-53, ISO
+                                        27001, and SOC 2.</p>
                                 </div>
                             </div>
                         </li>
@@ -580,9 +581,9 @@
 
             </article>
 
-            <article class="resume " data-page="resume">
+            <article class="resume " data-page="experience">
                 <header>
-                    <h2 class="h2 article-title">Resume</h2>
+                    <h2 class="h2 article-title">Experience</h2>
                 </header>
 
                 <section class="timeline">
@@ -594,28 +595,36 @@
 
                     <ol class="timeline-list">
                         <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Application Security Engineer & Software Engineer @
+                            <h4 class="h4 timeline-item-title">Application Security Engineer @
                                 Kalpita Technologies Pvt Ltd</h4>
                             <span>July 2024 - Present</span>
                             <p class="timeline-text">
-                                • Spearheaded secure SDLC practices and DevSecOps integrations using Azure DevOps CI/CD
-                                security gates, Gitleaks secret scanning, and automated SonarQube SAST / SCA checks.<br>
-                                • Conducted secure code reviews for C# .NET Core, Python, and Angular codebases,
-                                identifying and remediating OWASP Top 10 vulnerabilities (SQLi, XSS, broken auth, IDOR,
-                                SSRF).<br>
-                                • Architected Auth0 OIDC authentication, RBAC authorization, and secure JWT token
-                                validation for enterprise web applications.<br>
-                                • Hardened cloud environments leveraging Azure Key Vault secret isolation, IAM policy
-                                enforcement, and Docker container vulnerability scanning with Trivy.<br>
-                                • Automated Figma-to-code component pipelines via Builder.io while enforcing strict
-                                input sanitization, CSP headers, and defensive coding standards.<br>
-                                • Applied Test-Driven Development (TDD) using XUnit & PyTest to validate security
-                                regression tests and business logic invariants.
+                                <strong>1. STRIDE Threat Modeling:</strong> Mapped trust boundaries, attack vectors, and
+                                remediation paths during design reviews to identify security risks before
+                                deployment.<br>
+                                <strong>2. Source Code Management (SCM) Security:</strong> Implemented pre-commit hooks,
+                                Gitleaks, GitHub secret scanning, branch protection rules, RBAC, CODEOWNERS, and
+                                Dependabot controls across repositories.<br>
+                                <strong>3. CI/CD Pipeline Security:</strong> Designed zero-trust CI/CD workflows using
+                                HashiCorp Vault, GitHub Actions OIDC, and AWS dynamic credentials, with blocking SAST,
+                                SCA, Secret Scanning, Trivy, and DAST security gates.<br>
+                                <strong>4. Infrastructure as Code (IaC) Security:</strong> Hardened Terraform workflows
+                                with HashiCorp Vault integration, IaC static security checks, and Policy-as-Code
+                                enforcement.<br>
+                                <strong>5. Container Security:</strong> Hardened Docker workloads using rootless
+                                containers, distroless multi-stage builds, and Trivy vulnerability scanning.<br>
+                                <strong>6. Kubernetes Security:</strong> Secured AWS EKS environments through Network
+                                Policies, RBAC, Pod Security standards, and Admission Controllers.<br>
+                                <strong>7. Monitoring & Runtime Security:</strong> Established audit logging, runtime
+                                protection, SIEM integration, and incident triage playbooks for continuous detection and
+                                response.<br>
+                                <strong>8. Compliance & Governance:</strong> Applied Policy-as-Code and continuous
+                                compliance checks aligned with CIS Benchmarks, NIST, ISO 27001, and SOC 2 frameworks.
                             </p>
                         </li>
 
                         <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Application Security & Java Spring Backend Developer
+                            <h4 class="h4 timeline-item-title"> Java Spring Backend Developer
                                 Intern @ GeeksforGeeks</h4>
                             <span>March 2024 - June 2024</span>
                             <p class="timeline-text">
@@ -660,80 +669,9 @@
                     </ol>
                 </section>
 
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
-                        <h3 class="h3">Education</h3>
-                    </div>
 
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">GM Institute of Technology - Bachelor of Engineering</h4>
-                            <span>2019 - 2023 | CGPA: 6.94</span>
-                            <p class="timeline-text">Completed Bachelor of Engineering degree in Computer Science
-                                fundamentals, software engineering principles, computer networks, database systems,
-                                cryptography basics, and operating systems.</p>
-                        </li>
 
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Smt Pushpa Shamanur Mahalingappa PU College</h4>
-                            <span>2017 - 2019</span>
-                            <p class="timeline-text">Pre-University Education in Science (Physics, Chemistry,
-                                Mathematics, Biology) building analytical and problem-solving foundations.</p>
-                        </li>
-                    </ol>
-                </section>
-
-                <section class="skill">
-                    <h3 class="h3 skills-title">Security & Technical Proficiency</h3>
-
-                    <ul class="skills-list content-card">
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">DevSecOps & Pipeline Security (SAST / DAST / SCA)</h5>
-                                <data value="95">95%</data>
-                            </div>
-
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 95%;"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Secure Code Review & Vulnerability Remediation</h5>
-                                <data value="90">90%</data>
-                            </div>
-
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 90%;"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Cloud & IaC Security (AWS / Azure / Terraform / Vault)</h5>
-                                <data value="85">85%</data>
-                            </div>
-
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 85%;"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="title-wrapper">
-                                <h5 class="h5">Web / API Penetration Testing & Threat Modeling</h5>
-                                <data value="85">85%</data>
-                            </div>
-
-                            <div class="skills-progress-bg">
-                                <div class="skills-progress-fill" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
             </article>
 
             <article class="portfolio " data-page="projects">
@@ -741,109 +679,179 @@
                     <h2 class="h2 article-title">Projects</h2>
                 </header>
 
-                <section class="projects">
-                    <ul class="filter-list">
-                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                        <li class="filter-item"><button data-filter-btn>DevSecOps</button></li>
-                        <li class="filter-item"><button data-filter-btn>Web Security & Pentesting</button></li>
-                        <li class="filter-item"><button data-filter-btn>Security Research & Design</button></li>
-                    </ul>
+                <section class="projects-v2">
 
-                    <div class="filter-select-box">
-                        <button class="filter-select " data-select>
-                            <div class="select-value" data-select-value>Select Category</div>
-
-                            <div class="select-icon">
-                                <ion-icon name="chevron-down"></ion-icon>
-                            </div>
-                        </button>
-
-                        <ul class="select-list">
-                            <li class="select-item"><button data-select-item>All</button></li>
-                            <li class="select-item"><button data-select-item>DevSecOps</button></li>
-                            <li class="select-item"><button data-select-item>Web Security & Pentesting</button></li>
-                            <li class="select-item"><button data-select-item>Security Research & Design</button></li>
-                        </ul>
+                    <!-- Filter Bar -->
+                    <div class="pv2-filter-bar">
+                        <button class="pv2-filter-btn active" data-filter-btn data-filter="all">All</button>
+                        <button class="pv2-filter-btn" data-filter-btn data-filter="devsecops">DevSecOps</button>
+                        <button class="pv2-filter-btn" data-filter-btn
+                            data-filter="web security & pentesting">Pentesting</button>
+                        <button class="pv2-filter-btn" data-filter-btn data-filter="security research & design">UX
+                            Security</button>
                     </div>
 
-                    <ul class="project-list">
-                        <li class="project-item active" data-filter-item data-category="devsecops">
-                            <a href="https://github.com/prajwalrv/DevSecOps" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                    <!-- Project Cards -->
+                    <div class="pv2-grid">
+
+                        <!-- PROJECT 1: DevSecOps -->
+                        <div class="pv2-card" data-category="devsecops">
+                            <div class="pv2-card-bar" style="--bar-color: #e9c46a;"></div>
+                            <div class="pv2-card-inner">
+                                <div class="pv2-card-top">
+                                    <div class="pv2-icon-wrap pv2-icon--gold">
+                                        <img src="assets/azure-devops.png" alt="DevSecOps" loading="lazy">
                                     </div>
-
-                                    <img src="assets/azure-devops.png" alt="DevSecOps Repository" loading="lazy">
-                                </figure>
-
-                                <h3 class="project-title">DevSecOps Pipeline Security & Automation</h3>
-                                <p class="project-category">DevSecOps</p>
-                                <div class="project-description">
-                                    <p>End-to-end DevSecOps pipeline automation repository. Features SAST (SonarQube),
-                                        SCA (pip-audit, Dependabot), Secret Scanning (Gitleaks), Container Vulnerability
-                                        Scanning (Trivy), and Infrastructure as Code compliance checks with Terraform &
-                                        GitHub Actions.</p>
-                                    <p><strong>Key Security Features:</strong> Automated Security Gates, Secret
-                                        Scanning, HashiCorp Vault / AWS OIDC Integration, Trivy Container Hardening, IaC
-                                        Policy Enforcement.</p>
-                                    <p><strong>Tech Stack:</strong> SonarQube, ZAP, Trivy, Gitleaks, Terraform,
-                                        HashiCorp Vault, GitHub Actions, Docker, AWS/Azure</p>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="project-item active" data-filter-item data-category="web security & pentesting">
-                            <a href="https://github.com/prajwalrv/-PortSwiggerAcademy" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                    <div class="pv2-meta">
+                                        <span class="pv2-badge" style="--bc:#e9c46a;">DevSecOps</span>
+                                        <div class="pv2-links">
+                                            <a href="https://github.com/prajwalrv/DevSecOps" target="_blank"
+                                                class="pv2-btn pv2-btn--github">
+                                                <ion-icon name="logo-github"></ion-icon> GitHub
+                                            </a>
+                                        </div>
                                     </div>
-
-                                    <img src="assets/Burpsuite--Streamline-Simple-Icons.svg"
-                                        alt="PortSwigger Academy Repository" loading="lazy">
-                                </figure>
-
-                                <h3 class="project-title">PortSwigger Web Security Academy Labs & Exploitation</h3>
-                                <p class="project-category">Web Security & Pentesting</p>
-                                <div class="project-description">
-                                    <p>Comprehensive repository containing solutions, custom exploit scripts, and
-                                        methodology notes for PortSwigger Web Security Academy. Demonstrates practical
-                                        exploitation and remediation of OWASP Top 10 web vulnerabilities.</p>
-                                    <p><strong>Key Security Focus:</strong> SQL Injection, XSS, CSRF, SSRF, IDOR, Broken
-                                        Auth, CORS, Insecure Deserialization, Logic Flaws, WebSockets.</p>
-                                    <p><strong>Tech Stack:</strong> Burp Suite Pro, Web Pentesting, OWASP Top 10, Python
-                                        Exploit Scripts, PortSwigger Academy Labs</p>
                                 </div>
-                            </a>
-                        </li>
 
-                        <li class="project-item active" data-filter-item data-category="security research & design">
-                            <a href="https://www.figma.com/proto/kwQtrzCmyqPUTwGWNgNAQ0/Swipely?node-id=0-1&p=f&t=9HuZ0ytvnIoC5Hte-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=270%3A16"
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
+                                <h3 class="pv2-title">DevSecOps Pipeline Security & Automation</h3>
+                                <p class="pv2-desc">End-to-end DevSecOps pipeline automation with blocking security
+                                    gates at every CI/CD stage. Implements SAST, SCA, secret scanning, container
+                                    vulnerability scanning, and IaC compliance — blocking vulnerable code before it
+                                    reaches production.</p>
+
+                                <div class="pv2-highlights">
+                                    <div class="pv2-hl">
+                                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                                        <span>SonarQube SAST blocking vulnerable PRs automatically</span>
                                     </div>
-
-                                    <img src="assets/mobile.png" alt="SwipStyl Fashion Platform" loading="lazy">
-                                </figure>
-
-                                <h3 class="project-title">SwipStyl.in - Secure E-Commerce UX & Mobile-First Hardening
-                                </h3>
-                                <p class="project-category">Security Research & Design</p>
-                                <div class="project-description">
-                                    <p>Designed and optimized a mobile-first fashion shopping platform in Figma. Focused
-                                        on secure checkout flows, input validation patterns, XSS prevention, and
-                                        reducing order fulfillment latency by 95% through optimized UI flows.</p>
-                                    <p><strong>Key Security Features:</strong> Secure Checkout UI/UX Patterns,
-                                        Mobile-First Data Protection, Sanitized Form Validation Flows.</p>
-                                    <p><strong>Tech Stack:</strong> Figma, Secure UX/UI Design, Mobile-First Security,
-                                        Responsive Layouts</p>
+                                    <div class="pv2-hl">
+                                        <ion-icon name="key-outline"></ion-icon>
+                                        <span>HashiCorp Vault + GitHub Actions OIDC — zero hardcoded secrets</span>
+                                    </div>
+                                    <div class="pv2-hl">
+                                        <ion-icon name="bug-outline"></ion-icon>
+                                        <span>Gitleaks pre-commit + Trivy container hardening pipeline</span>
+                                    </div>
                                 </div>
-                            </a>
-                        </li>
-                    </ul>
+
+                                <div class="pv2-stack">
+                                    <span class="pv2-tag">SonarQube</span>
+                                    <span class="pv2-tag">OWASP ZAP</span>
+                                    <span class="pv2-tag">Trivy</span>
+                                    <span class="pv2-tag">Gitleaks</span>
+                                    <span class="pv2-tag">Terraform</span>
+                                    <span class="pv2-tag">HashiCorp Vault</span>
+                                    <span class="pv2-tag">GitHub Actions</span>
+                                    <span class="pv2-tag">Docker</span>
+                                    <span class="pv2-tag">AWS / Azure</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 2: PortSwigger -->
+                        <div class="pv2-card" data-category="web security & pentesting">
+                            <div class="pv2-card-bar" style="--bar-color: #e76f51;"></div>
+                            <div class="pv2-card-inner">
+                                <div class="pv2-card-top">
+                                    <div class="pv2-icon-wrap pv2-icon--orange">
+                                        <img src="assets/Burpsuite--Streamline-Simple-Icons.svg" alt="Burp Suite"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="pv2-meta">
+                                        <span class="pv2-badge" style="--bc:#e76f51;">Web Security & Pentesting</span>
+                                        <div class="pv2-links">
+                                            <a href="https://github.com/prajwalrv/-PortSwiggerAcademy" target="_blank"
+                                                class="pv2-btn pv2-btn--github">
+                                                <ion-icon name="logo-github"></ion-icon> GitHub
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="pv2-title">PortSwigger Web Security Academy — Labs & Exploitation</h3>
+                                <p class="pv2-desc">Comprehensive repository of exploit scripts, methodology notes, and
+                                    solutions for PortSwigger Web Security Academy. Demonstrates hands-on exploitation
+                                    and remediation of OWASP Top 10 using Burp Suite Pro and custom Python automation.
+                                </p>
+
+                                <div class="pv2-highlights">
+                                    <div class="pv2-hl">
+                                        <ion-icon name="flask-outline"></ion-icon>
+                                        <span>SQLi, XSS, CSRF, SSRF, IDOR, Broken Auth — full exploitation
+                                            coverage</span>
+                                    </div>
+                                    <div class="pv2-hl">
+                                        <ion-icon name="code-slash-outline"></ion-icon>
+                                        <span>Custom Python scripts for automated vulnerability testing</span>
+                                    </div>
+                                    <div class="pv2-hl">
+                                        <ion-icon name="document-text-outline"></ion-icon>
+                                        <span>Detailed remediation writeups alongside each exploit</span>
+                                    </div>
+                                </div>
+
+                                <div class="pv2-stack">
+                                    <span class="pv2-tag">Burp Suite Pro</span>
+                                    <span class="pv2-tag">OWASP Top 10</span>
+                                    <span class="pv2-tag">Python</span>
+                                    <span class="pv2-tag">Web Pentesting</span>
+                                    <span class="pv2-tag">API Security</span>
+                                    <span class="pv2-tag">PortSwigger Labs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 3: SwipStyl -->
+                        <div class="pv2-card" data-category="security research & design">
+                            <div class="pv2-card-bar" style="--bar-color: #2a9d8f;"></div>
+                            <div class="pv2-card-inner">
+                                <div class="pv2-card-top">
+                                    <div class="pv2-icon-wrap pv2-icon--teal">
+                                        <img src="assets/mobile.png" alt="SwipStyl" loading="lazy">
+                                    </div>
+                                    <div class="pv2-meta">
+                                        <span class="pv2-badge" style="--bc:#2a9d8f;">Security Research & Design</span>
+                                        <div class="pv2-links">
+                                            <a href="https://www.figma.com/proto/kwQtrzCmyqPUTwGWNgNAQ0/Swipely?node-id=0-1&p=f&t=9HuZ0ytvnIoC5Hte-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=270%3A16"
+                                                target="_blank" class="pv2-btn pv2-btn--teal">
+                                                <ion-icon name="eye-outline"></ion-icon> View Prototype
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="pv2-title">SwipStyl.in — Secure Mobile-First E-Commerce UX</h3>
+                                <p class="pv2-desc">Designed a mobile-first fashion e-commerce platform in Figma with a
+                                    security-first UX approach. Focused on secure checkout flows, sanitized input
+                                    patterns, XSS prevention in UI components, and reducing order fulfillment latency by
+                                    95%.</p>
+
+                                <div class="pv2-highlights">
+                                    <div class="pv2-hl">
+                                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                                        <span>95% reduction in order fulfillment latency via UX optimization</span>
+                                    </div>
+                                    <div class="pv2-hl">
+                                        <ion-icon name="lock-closed-outline"></ion-icon>
+                                        <span>Secure checkout flows & sanitized form validation patterns</span>
+                                    </div>
+                                    <div class="pv2-hl">
+                                        <ion-icon name="shield-outline"></ion-icon>
+                                        <span>XSS prevention baked into every UI component design</span>
+                                    </div>
+                                </div>
+
+                                <div class="pv2-stack">
+                                    <span class="pv2-tag">Figma</span>
+                                    <span class="pv2-tag">Secure UX Design</span>
+                                    <span class="pv2-tag">Mobile-First</span>
+                                    <span class="pv2-tag">XSS Prevention</span>
+                                    <span class="pv2-tag">Input Sanitization</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.pv2-grid -->
                 </section>
             </article>
 
@@ -880,6 +888,259 @@
                         </li>
                     </ul>
                 </section>
+            </article>
+
+            <article class="skills-page " data-page="skills">
+                <header>
+                    <h2 class="h2 article-title">Skills</h2>
+                </header>
+
+                <!-- ── TOOLS & TECHNOLOGIES ─────────────────────────── -->
+                <section class="skill">
+                    <h3 class="h3 skills-title">Tools & Technologies</h3>
+                    <div class="skills-tags-grid content-card">
+
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                                Secure SDLC / DevSecOps
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SonarQube</span>
+                                <span class="skill-tag">Semgrep</span>
+                                <span class="skill-tag">Snyk</span>
+                                <span class="skill-tag">Trivy</span>
+                                <span class="skill-tag">HashiCorp Vault</span>
+                                <span class="skill-tag">Gitleaks</span>
+                                <span class="skill-tag">Checkov</span>
+                                <span class="skill-tag">pip-audit</span>
+                                <span class="skill-tag">Dependabot</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="bug-outline"></ion-icon>
+                                Offensive Security / VAPT
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Burp Suite</span>
+                                <span class="skill-tag">OWASP ZAP</span>
+                                <span class="skill-tag">Nmap</span>
+                                <span class="skill-tag">Metasploit</span>
+                                <span class="skill-tag">Kali Linux</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="git-network-outline"></ion-icon>
+                                Threat Modeling
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">OWASP Threat Dragon</span>
+                                <span class="skill-tag">STRIDE</span>
+                                <span class="skill-tag">PASTA</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                Source Code & Repo Security
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Gitleaks</span>
+                                <span class="skill-tag">Pre-Commit Hooks</span>
+                                <span class="skill-tag">Branch Protection</span>
+                                <span class="skill-tag">CODEOWNERS</span>
+                                <span class="skill-tag">RBAC</span>
+                                <span class="skill-tag">Secret Scanning</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="cube-outline"></ion-icon>
+                                Container & Image Security
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">Trivy</span>
+                                <span class="skill-tag">Distroless Images</span>
+                                <span class="skill-tag">Rootless Containers</span>
+                                <span class="skill-tag">Multi-Stage Builds</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="cloud-outline"></ion-icon>
+                                Cloud & Infrastructure
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Azure</span>
+                                <!-- <span class="skill-tag">Azure Key Vault</span>
+                                <span class="skill-tag">Azure SQL</span> -->
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Terraform</span>
+                                <span class="skill-tag">IaC Hardening</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="code-slash-outline"></ion-icon>
+                                Languages & Frameworks
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">.NET Core</span>
+                                <span class="skill-tag">ASP.NET Core</span>
+                                <span class="skill-tag">Python</span>
+                                <!-- <span class="skill-tag">Java Spring Boot</span> -->
+                                <span class="skill-tag">Angular</span>
+                                <!-- <span class="skill-tag">TypeScript</span> -->
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="git-branch-outline"></ion-icon>
+                                CI/CD & Pipeline Security
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">GitHub Actions</span>
+                                <span class="skill-tag">Azure DevOps</span>
+                                <span class="skill-tag">Security Gates</span>
+                                <span class="skill-tag">SAST Integration</span>
+                                <span class="skill-tag">SCA Integration</span>
+                                <span class="skill-tag">DAST Integration</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ── CORE COMPETENCIES ───────────────────────────────── -->
+                <section class="skill">
+                    <h3 class="h3 skills-title">Core Competencies</h3>
+                    <ul class="competency-list content-card">
+
+                        <li class="competency-item">
+                            <div class="competency-icon"><ion-icon name="search-outline"></ion-icon></div>
+                            <div class="competency-body">
+                                <h5 class="competency-title">Secure Code Review</h5>
+                                <p class="competency-desc">Deep manual review of C#, Python, Java, and TypeScript
+                                    codebases for OWASP Top 10 flaws — SQLi, XSS, broken auth, IDOR, SSRF — with written
+                                    remediation paths developers can act on immediately.</p>
+                            </div>
+                        </li>
+
+                        <li class="competency-item">
+                            <div class="competency-icon"><ion-icon name="analytics-outline"></ion-icon></div>
+                            <div class="competency-body">
+                                <h5 class="competency-title">SAST / DAST / SCA Automation</h5>
+                                <p class="competency-desc">Embedding SonarQube SAST, pip-audit / Dependabot SCA, and
+                                    OWASP ZAP DAST as blocking security gates inside Azure DevOps and GitHub Actions
+                                    pipelines — stopping vulnerable code before it merges.</p>
+                            </div>
+                        </li>
+
+                        <li class="competency-item">
+                            <div class="competency-icon"><ion-icon name="flask-outline"></ion-icon></div>
+                            <div class="competency-body">
+                                <h5 class="competency-title">Web & API Penetration Testing</h5>
+                                <p class="competency-desc">Hands-on exploitation of OWASP Web Top 10, API Top 10, and
+                                    LLM Top 10 vulnerabilities using Burp Suite Pro, OWASP ZAP, and custom Python
+                                    automation scripts. Practical experience through PortSwigger Web Security Academy
+                                    labs.</p>
+                            </div>
+                        </li>
+
+                        <li class="competency-item">
+                            <div class="competency-icon"><ion-icon name="map-outline"></ion-icon></div>
+                            <div class="competency-body">
+                                <h5 class="competency-title">Threat Modeling</h5>
+                                <p class="competency-desc">Applying STRIDE and PASTA methodologies to identify trust
+                                    boundaries, data flows, and attack surfaces in microservices and cloud architectures
+                                    before a single line of production code is written.</p>
+                            </div>
+                        </li>
+
+                        <li class="competency-item">
+                            <div class="competency-icon"><ion-icon name="key-outline"></ion-icon></div>
+                            <div class="competency-body">
+                                <h5 class="competency-title">Identity & Access Management</h5>
+                                <p class="competency-desc">Architecting Auth0 OIDC authentication, RBAC authorization
+                                    models, secure JWT validation, and Azure Managed Identities to enforce
+                                    least-privilege access across enterprise applications.</p>
+                            </div>
+                        </li>
+
+                        <li class="competency-item">
+                            <div class="competency-icon"><ion-icon name="server-outline"></ion-icon></div>
+                            <div class="competency-body">
+                                <h5 class="competency-title">Cloud & Secrets Security</h5>
+                                <p class="competency-desc">Hardening cloud deployments with Azure Key Vault secret
+                                    isolation, IaC scanning with Checkov and Terraform, and enforcing least-privilege
+                                    IAM policies to prevent credential exposure in enterprise environments.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- ── FRAMEWORKS & STANDARDS ─────────────────────────── -->
+                <section class="skill">
+                    <h3 class="h3 skills-title">Frameworks & Standards</h3>
+                    <div class="skills-tags-grid content-card" style="grid-template-columns: 1fr 1fr 1fr;">
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                                OWASP Standards
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">OWASP Top 10</span>
+                                <span class="skill-tag">OWASP API Top 10</span>
+                                <span class="skill-tag">OWASP LLM Top 10</span>
+                                <!-- <span class="skill-tag">OWASP ASVS</span> -->
+                                <!-- <span class="skill-tag">OWASP SAMM</span> -->
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="shield-outline"></ion-icon>
+                                Security Concepts
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Zero Trust</span>
+                                <span class="skill-tag">Defense in Depth</span>
+                                <span class="skill-tag">Least Privilege</span>
+                                <span class="skill-tag">Shift Left Security</span>
+                                <span class="skill-tag">Supply Chain Security</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5 class="skill-category-title">
+                                <ion-icon name="ribbon-outline"></ion-icon>
+                                Certifications
+                            </h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">CompTIA Security+</span>
+                                <span class="skill-tag">AZ-204 (828/1000)</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
             </article>
 
             <article class="contact " data-page="contact">
@@ -1124,6 +1385,27 @@
 
                 console.log(`Ticker animation set to: ${animationType || 'none'}`);
             };
+
+            // --- Projects V2 Filter ---
+            const pv2FilterBtns = document.querySelectorAll('.pv2-filter-btn');
+            const pv2Cards = document.querySelectorAll('.pv2-card');
+
+            if (pv2FilterBtns.length > 0) {
+                pv2FilterBtns.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const filter = this.dataset.filter;
+                        pv2FilterBtns.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+                        pv2Cards.forEach(card => {
+                            if (filter === 'all' || card.dataset.category === filter) {
+                                card.classList.remove('hidden');
+                            } else {
+                                card.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+            }
         });
     </script>
 
